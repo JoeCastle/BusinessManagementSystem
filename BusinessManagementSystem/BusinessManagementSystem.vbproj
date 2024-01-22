@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2934E14F-0CEE-4FB0-8A74-31B5422D6FE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BusinessManagementSystem.My.MyApplication</StartupObject>
+    <RootNamespace>BusinessManagementSystem</RootNamespace>
+    <AssemblyName>BusinessManagementSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Administrator\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BusinessManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BusinessManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DJD_Logo_Equal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2DB3D189B345B475D600CB30AC500C61CC3B4787</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BusinessManagementSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer_Add.Designer.vb">
+      <DependentUpon>Customer_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Delete.Designer.vb">
+      <DependentUpon>Customer_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Edit.Designer.vb">
+      <DependentUpon>Customer_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Add.Designer.vb">
+      <DependentUpon>Product_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Password.Designer.vb">
+      <DependentUpon>Change_Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.vb">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Main.Designer.vb">
+      <DependentUpon>Employee_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Menu.Designer.vb">
+      <DependentUpon>Login_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Owner_Main.Designer.vb">
+      <DependentUpon>Owner_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.vb">
+      <DependentUpon>Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Delete.Designer.vb">
+      <DependentUpon>Product_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Edit.Designer.vb">
+      <DependentUpon>Product_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_Analysis.Designer.vb">
+      <DependentUpon>Sales_Analysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_Analysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers.Designer.vb">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Add.Designer.vb">
+      <DependentUpon>Supplier_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Delete.Designer.vb">
+      <DependentUpon>Supplier_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Edit.Designer.vb">
+      <DependentUpon>Supplier_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions.Designer.vb">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Add.Designer.vb">
+      <DependentUpon>Transaction_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Delete.Designer.vb">
+      <DependentUpon>Transaction_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Edit.Designer.vb">
+      <DependentUpon>Transaction_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Customer_Add.resx">
+      <DependentUpon>Customer_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Delete.resx">
+      <DependentUpon>Customer_Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Edit.resx">
+      <DependentUpon>Customer_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Add.resx">
+      <DependentUpon>Product_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Password.resx">
+      <DependentUpon>Change_Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Main.resx">
+      <DependentUpon>Employee_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Menu.resx">
+      <DependentUpon>Login_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Main.resx">
+      <DependentUpon>Owner_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Delete.resx">
+      <DependentUpon>Product_Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Edit.resx">
+      <DependentUpon>Product_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_Analysis.resx">
+      <DependentUpon>Sales_Analysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppliers.resx">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Add.resx">
+      <DependentUpon>Supplier_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Delete.resx">
+      <DependentUpon>Supplier_Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Edit.resx">
+      <DependentUpon>Supplier_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions.resx">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Add.resx">
+      <DependentUpon>Transaction_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Delete.resx">
+      <DependentUpon>Transaction_Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Edit.resx">
+      <DependentUpon>Transaction_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessManagementSystem_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customers.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DJD_Logo_Equal.ico" />
+    <Content Include="Last_Backup_Details.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Login_Details.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Products.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Suppliers.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Transactions.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

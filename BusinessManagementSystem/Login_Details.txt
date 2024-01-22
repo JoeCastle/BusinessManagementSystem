@@ -1,0 +1,2 @@
+owner,Password1,1
+notowner,Password2,0
